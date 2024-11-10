@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hhecquet <hhecquet@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 13:03:51 by hhecquet          #+#    #+#             */
-/*   Updated: 2024/11/06 10:29:42 by hhecquet         ###   ########.fr       */
+/*   Created: 2024/11/10 19:52:56 by marvin            #+#    #+#             */
+/*   Updated: 2024/11/10 19:52:56 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	size_t	j;
+	int	i;
 
-	j = 0;
-	while (s[j])
+	i = 0;
+	while (s[i])
 	{
-		j++;
+		f(i, &s[i]);
+		i++;
 	}
-	return (j);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int main(void)
-{
-	printf("%zu\n",ft_strlen("Bonjour 42 :-)"));
-        printf("%lu",strlen("Bonjour 42 :-)"));
-	return(0);
-}*/

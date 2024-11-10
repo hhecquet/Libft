@@ -61,7 +61,7 @@ static void	ft_free(char **tab, size_t i)
 		j++;
 	}
 	free(tab);
-}	
+}
 
 static char	**ft_set_string(char const *s, char c, char **tab, int i)
 {

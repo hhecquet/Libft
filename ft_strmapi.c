@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hhecquet <hhecquet@student.42perpignan.    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/04 13:03:51 by hhecquet          #+#    #+#             */
-/*   Updated: 2024/11/06 10:29:42 by hhecquet         ###   ########.fr       */
+/*   Created: 2024/11/10 19:01:59 by marvin            #+#    #+#             */
+/*   Updated: 2024/11/10 19:01:59 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t	j;
+	size_t	i;
+	char	*str;
 
-	j = 0;
-	while (s[j])
+	i = 0;
+	str = ft_strdup(s);
+	if (!str)
 	{
-		j++;
+		return (NULL);
 	}
-	return (j);
+	while (s[i])
+	{
+		str[i] = f(i, s[i]);
+		i++;
+	}
+	return (str);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int main(void)
-{
-	printf("%zu\n",ft_strlen("Bonjour 42 :-)"));
-        printf("%lu",strlen("Bonjour 42 :-)"));
-	return(0);
-}*/

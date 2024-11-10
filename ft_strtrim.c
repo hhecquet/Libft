@@ -80,11 +80,9 @@ static char	*ft_trimwords(char const *s1, char const *set, char	*str)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t	i;
 	size_t	j;
 	char	*str;
 
-	i = 0;
 	j = ft_countwords(s1, set);
 	str = malloc(sizeof(char) * ((ft_strlen(s1) - j) + 1));
 	if (!str)

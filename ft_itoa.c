@@ -27,7 +27,7 @@ static size_t	ft_countnum(long nb)
 		i++;
 	}
 	return (i);
-}	
+}
 
 char	*ft_itoa(int n)
 {
