@@ -25,8 +25,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return ((void *)s);
 }
-/*
-#include <string.h>
+/* #include <string.h>
 #include <stdio.h>
 int main(void)
 {
@@ -40,4 +39,4 @@ int main(void)
 	memset(str2,'$',5);
 	printf("%s\n",str2);
 	return(0);
-}*/
+} */

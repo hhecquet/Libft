@@ -37,9 +37,19 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i] = '\0';
 	return (str);
 }
-/* 
-#include <string.h>
+/* #include <string.h>
 #include <stdio.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
 int main(void)
 {
 	char	des1[500] = "Bonjour ";

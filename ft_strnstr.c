@@ -39,14 +39,26 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <bsd/string.h>
+/* #include <bsd/string.h>
 #include <stdio.h>
 #include <string.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
 int main(void)
 {
-	printf("%s\n", ft_strnstr("Bonjour mon bro je t'aime ;)","je",16));
-        printf("%s",strnstr("Bonjour mon bro je t'aime ;)","je",16));
-        return(0);
-}*/
+	printf("%s = ", ft_strnstr("Bonjour mon bro je t'aime ;)","je",16));
+    printf("%s\n",strnstr("Bonjour mon bro je t'aime ;)","je",16));
+	printf("%s = ", ft_strnstr("Bonjour mon bro je t'aime ;)","je",20));
+    printf("%s\n",strnstr("Bonjour mon bro je t'aime ;)","je",20));
+    return(0);
+} */
 //cc -Wall -Wextra -Werror -lbsd -g ft_strnstr.c && ./a.out

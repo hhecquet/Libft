@@ -28,8 +28,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <string.h>
+/* #include <string.h>
 #include <stdio.h>
 int main(void)
 {
@@ -40,4 +39,4 @@ int main(void)
 	printf("%s\n",res2);
 	printf("%s\n", res1);
 	return(0);
-}*/
+} */

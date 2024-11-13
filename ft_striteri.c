@@ -23,3 +23,21 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+/* #include <stdio.h>
+#include <string.h>
+void f_content(unsigned int a, char *b)
+{
+	(void)a;
+	if (*b >= 'a' && *b <= 'z')
+    {
+        *b -= 32;
+    }
+}
+int main(void)
+{
+	char str[] = "Bonjour2 la mIFf";
+    printf("avant et apres (*f) %s :", str);
+	ft_striteri(str, f_content);
+	printf("%s",str);
+    return(0);
+} */

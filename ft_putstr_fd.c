@@ -20,3 +20,9 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
+/* #include <unistd.h>
+int main(void)
+{
+	ft_putstr_fd("Bonjour 42", 1);
+	return (0);
+} */

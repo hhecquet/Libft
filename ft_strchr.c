@@ -27,14 +27,13 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s + i));
 	return (NULL);
 }
-/*
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 int main(void)
 {
 	printf("%s\n", ft_strchr("Bonjour mon bro je t'aime ;)",'p'));
     printf("%s\n",strchr("Bonjour mon bro je t'aime ;)",'p'));
-	printf("%s\n", ft_strchr("Bonjour mon bro je t'aime ;)",'o'));
-    printf("%s\n",strchr("Bonjour mon bro je t'aime ;)",'o'));
+	printf("%s\n", ft_strchr("Bonjour mon bro je t'aime ;)",'j'));
+    printf("%s\n",strchr("Bonjour mon bro je t'aime ;)",'j'));
     return(0);
-}*/
+} */

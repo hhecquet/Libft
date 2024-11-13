@@ -35,19 +35,29 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[j] = '\0';
 	return (res);
 }
-/*
-#include <bsd/string.h>
+/* #include <bsd/string.h>
 #include <stdio.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
 int main(void)
 {
 	char	dst[] = "a";
 	char	src[] = "12345678";
 	char	dst2[] = "a";
 	char	src2[] = "12345678";
-	printf("%zu\n",ft_strlcat(dst,src,1));
+	printf("%zu; ",ft_strlcat(dst,src,1));
 	printf("%s\n",dst);
-	printf("%zu\n",strlcat(dst2,src2,1));
+	printf("%zu; ",strlcat(dst2,src2,1));
 	printf("%s\n",dst2);
 	return(0);
-}*/
+} */
 //cc -Wall -Wextra -Werror -g -lbsd ft_strlcat.c && ./a.out

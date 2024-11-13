@@ -28,3 +28,20 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	ft_putchar_fd((nb % 10) + '0', fd);
 }
+/* #include <unistd.h>
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
+int main(void)
+{
+    ft_putnbr_fd(-6312,1);
+	ft_putchar_fd('\n',1);
+	ft_putnbr_fd(-2147483648,1);
+    ft_putchar_fd('\n',1);
+	ft_putnbr_fd(6312125,1);
+    ft_putchar_fd('\n',1);
+	ft_putnbr_fd(-0,1);
+    ft_putchar_fd('\n',1);
+    return (0);
+} */

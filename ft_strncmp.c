@@ -27,16 +27,15 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
 int main(void)
 {
-    printf("%d\n",ft_strncmp("ABC", "ABCDE",5));
+    printf("%d = ",ft_strncmp("ABC", "ABCDE",5));
     printf("%d\n",strncmp("ABC", "ABCDE",5));
-    printf("%d\n",ft_strncmp("ABCDE", "ABC",5));
+    printf("%d = ",ft_strncmp("ABCDE", "ABC",5));
     printf("%d\n",strncmp("ABCDE", "ABC",5));
-    printf("%d\n",ft_strncmp("ABC", "ABC",5));
+    printf("%d = ",ft_strncmp("ABC", "ABC",5));
     printf("%d\n",strncmp("ABC", "ABC",5));
     return(0);
-}*/
+} */

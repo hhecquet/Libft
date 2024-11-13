@@ -40,3 +40,22 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[j] = '\0';
 	return (str);
 }
+/* #include <stdio.h>
+#include <string.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
+int main(void)
+{
+	printf("%s\n", ft_substr("Bonjour mon bro je t'aime ;)",0,15));
+	printf("%s\n", ft_substr("Bonjour mon bro je t'aime ;)",16,12));
+    return(0);
+}  */

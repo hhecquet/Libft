@@ -25,14 +25,24 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
+/* #include <stdio.h>
 #include <string.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
 int main(void)
 {
-	printf("%s\n", ft_strrchr("Bonjour mon bro je t'aime ;)",'p'));
+	printf("%s = ", ft_strrchr("Bonjour mon bro je t'aime ;)",'p'));
     printf("%s\n",strrchr("Bonjour mon bro je t'aime ;)",'p'));
-	printf("%s\n", ft_strrchr("Bonjour mon bro je t'aime ;)",'o'));
+	printf("%s = ", ft_strrchr("Bonjour mon bro je t'aime ;)",'o'));
     printf("%s\n",strrchr("Bonjour mon bro je t'aime ;)",'o'));
     return(0);
-}*/
+} */

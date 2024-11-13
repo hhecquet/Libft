@@ -27,8 +27,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <string.h>
+/* #include <string.h>
 #include <stdio.h>
 int main(void)
 {
@@ -41,4 +40,4 @@ int main(void)
 	printf("%d\n",res2);
 	printf("%d\n", res1);
 	return(0);
-}*/
+} */

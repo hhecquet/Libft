@@ -29,12 +29,22 @@ char	*ft_strdup(const char *s)
 	str[i] = '\0';
 	return (str);
 }
-/*
-#include <string.h>
+/* #include <string.h>
 #include <stdio.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
 int main(void)
 {
 	printf("%s\n",ft_strdup("Bonjour 42 abcdefghijklmnopqrstuvwxyz"));
 	printf("%s\n",strdup("Bonjour 42 abcdefghijklmnopqrstuvwxyz"));
 	return (0);
-}*/
+} */

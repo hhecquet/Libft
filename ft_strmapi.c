@@ -30,3 +30,49 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (str);
 }
+/* #include <stdio.h>
+#include <string.h>
+char	*ft_strdup(const char *s)
+{
+	char	*str;
+	int		i;
+
+	i = 0;
+	str = malloc(sizeof(char) * (ft_strlen(s) +1));
+	if (!str)
+		return (NULL);
+	while (s[i])
+	{
+		str[i] = s[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
+char f_content(unsigned int a, char b)
+{
+	(void)a;
+	if (b >= 'a' && b <= 'z')
+    {
+        b -= 32;
+    }
+	return(b);
+}
+int main(void)
+{
+	char str[] = "Bonjour2 la mIFf";
+    printf("avant et apres (*f) %s :", str);
+	printf("%s",ft_strmapi(str, f_content));
+    return(0);
+} */

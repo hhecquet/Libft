@@ -29,19 +29,29 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	*(unsigned char *)dst = '\0';
 	return (i);
 }
-/*
-#include <bsd/string.h>
+/* #include <bsd/string.h>
 #include <stdio.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
 int main(void)
 {
 	char	dst[] = "1546546464664";
 	char	src[] = "12345678";
 	char	dst2[] = "1546546464664";
 	char	src2[] = "12345678";
-	printf("%zu\n",ft_strlcpy(dst,src,75));
+	printf("%zu; ",ft_strlcpy(dst,src,75));
 	printf("%s\n",dst);
-	printf("%zu\n",strlcpy(dst2,src2,75));
+	printf("%zu; ",strlcpy(dst2,src2,75));
 	printf("%s\n",dst2);
 	return(0);
-}*/
+} */
 //cc -Wall -Wextra -Werror -g -lbsd ft_strlcpy.c && ./a.out

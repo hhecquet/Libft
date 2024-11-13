@@ -90,10 +90,20 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str = ft_trimwords(s1, set, str);
 	return (str);
 }
-
 /* #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
+size_t	ft_strlen(const char *s)
+{
+	size_t	j;
+
+	j = 0;
+	while (s[j])
+	{
+		j++;
+	}
+	return (j);
+}
 int main(void)
 {
 	const char *s1 = "  \t \t \n   \n\n\n\t";
@@ -101,8 +111,8 @@ int main(void)
  	char *ret = ft_strtrim(s1, " \n\t");
  
  	if (!strcmp(ret, s2))
- 		write(1,"yes",3);
+ 		write(1,"yes it work",12);
  	else
-		write(1,"no",2);
+		write(1,"no...",5);
 	return (0);
 } */

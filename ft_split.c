@@ -106,3 +106,18 @@ char	**ft_split(char const *s, char c)
 	tab = ft_set_string(s, c, tab, i);
 	return (tab);
 }
+/* #include <stdio.h>
+int     main(void)
+{
+        char    *strs = "Hello<World>Wide< >Web";
+        char    sep = '<';
+        int     i = 0;
+        char    **str = ft_split(strs,sep);
+
+        while (str[i])
+        {
+                printf("%s\n",str[i]);
+                i++;
+        }
+        return (0);
+} */

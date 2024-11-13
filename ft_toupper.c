@@ -20,12 +20,11 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*
-#include <stdio.h>
+/* #include <stdio.h>
 #include <ctype.h>
 int main(void)
 {
-	printf("%d",ft_toupper('b'));
-	printf("\n%d",toupper('b'));
+	printf("%d = ",ft_toupper('b'));
+	printf("%d",toupper('b'));
     return(0);
-}*/
+} */
