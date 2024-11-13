@@ -40,8 +40,7 @@ int	ft_atoi(const char *nptr)
 	}
 	return (res * j);
 }
-/*
-#include <stdlib.h>
+/* #include <stdlib.h>
 #include <stdio.h>
 int    main(void)
 {
@@ -52,4 +51,4 @@ int    main(void)
 	printf("%d\n", ft_atoi("  \t\n -2611a20"));
     printf("%d\n", atoi("  \t\n -2611a20"));
     return (0);
-}*/
+} */

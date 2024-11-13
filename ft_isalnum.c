@@ -20,14 +20,29 @@ int	ft_isalnum(int c)
 	}
 	return (0);
 }
-/*
-#include <ctype.h>
+/*#include <ctype.h>
 #include <stdio.h>
+int	ft_isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	{
+		return (1);
+	}
+	return (0);
+}
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	return (0);
+} 
 int main(void)
 {
-	printf("%d",ft_isalnum('a'));
-	printf("\n%d",isalnum('a'));
-	printf("\n%d",ft_isalnum('.'));
-	printf("\n%d",isalnum('.'));
+	printf("+: %d\n",ft_isalnum('a'));
+	printf("+: %d\n",isalnum('a'));
+	printf("0: %d\n",ft_isalnum('.'));
+	printf("0: %d\n",isalnum('.'));
     return(0);
 }*/

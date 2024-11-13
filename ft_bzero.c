@@ -24,8 +24,7 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-/*
-#include <string.h>
+/* #include <string.h>
 #include <stdio.h>
 int main(void)
 {
@@ -37,4 +36,4 @@ int main(void)
 	bzero(str2, 3);
 	printf("%s\n", str2);
 	return(0);
-}*/
+} */

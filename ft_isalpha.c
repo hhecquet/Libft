@@ -20,14 +20,13 @@ int	ft_isalpha(int c)
 	}
 	return (0);
 }
-/*
-#include <ctype.h>
+/* #include <ctype.h>
 #include <stdio.h>
 int main(void)
 {
-	printf("%d\n",ft_isalpha('a'));
-	printf("%d\n",isalpha('a'));
-	printf("%d\n",ft_isalpha('1'));
-	printf("%d\n",isalpha('1'));
+	printf("+: %d\n",ft_isalpha('a'));
+	printf("+: %d\n",isalpha('a'));
+	printf("0: %d\n",ft_isalpha('1'));
+	printf("0: %d\n",isalpha('1'));
     return(0);
-}*/
+} */
